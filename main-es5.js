@@ -21,7 +21,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<app-navbar *ngIf=\"removeNavbar()\"></app-navbar>\n<router-outlet></router-outlet>\n<app-footer *ngIf=\"removeFooter()\"></app-footer>\n";
+    __webpack_exports__["default"] = "<app-navbar></app-navbar>\n<router-outlet></router-outlet>\n<app-footer *ngIf=\"removeFooter()\"></app-footer>";
     /***/
   },
 
@@ -61,7 +61,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div *ngIf=\"admin && productos\">\n    <div class=\"page-header\" data-parallax=\"true\" style=\"background-image: url('https://instagram.fscl14-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c20.0.905.905a/s640x640/93988852_223215262273942_7318410478601245939_n.jpg?_nc_ht=instagram.fscl14-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=pN5RSxoOgdcAX-S9T9N&oh=27449f739174ab688dee0ea1379442ac&oe=5F9E0D36');\">\n        <div class=\"filter\"></div>\n        <div class=\"container\">\n            <div class=\"motto text-center\">\n            </div>\n        </div>\n    </div>\n    <div class=\"main\">\n        <div class=\"section text-center\">\n        <div class=\"container\">\n            <div class=\"row\">\n                <div class=\"col-md-8 mr-auto ml-auto\">\n                    <h2 class=\"title\">{{admin.titulo}}</h2>\n                    <h5 class=\"description\">{{admin.presentacion}}</h5>\n                </div>\n            </div>\n            \n            <br/><br/>\n            \n            <div class=\"row\">\n                <div class=\"col-xs-12  col-sm-6 col-md-4\" *ngFor=\"let pro of productos; index as i;\" (click)=\"open(pro)\">\n                    <img src=\"{{pro.img}}\" class=\"img-thumbnail img-responsive\" alt=\"Rounded Image\">\n                </div>\n            </div>\n            \n            <br/><br/>\n\n            <div class=\"row\">\n                <div class=\"col-md-4\">\n                    <div class=\"info\">\n                        <div class=\"icon icon-primary\">\n                            <i class=\"nc-icon nc-album-2\"></i>\n                        </div>\n                        <div class=\"description\">\n                            <p class=\"info-title\">Despacho Gratuito</p>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-md-4\">\n                    <div class=\"info\">\n                        <div class=\"icon icon-primary\">\n                            <i class=\"nc-icon nc-album-2\"></i>\n                        </div>\n                        <div class=\"description\">\n                            <p class=\"info-title\">Agua 100% purificada</p>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-md-4\">\n                    <div class=\"info\">\n                        <div class=\"icon icon-primary\">\n                            <i class=\"nc-icon nc-album-2\"></i>\n                        </div>\n                        <div class=\"description\">\n                            <p class=\"info-title\">Producto aprobado con resolución sanitaria</p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n\n        </div>\n    </div>\n\n    <div class=\"section section-dark text-center\">\n        <div class=\"container\">\n            <h2 class=\"title\">Hablemos de nosotros</h2>\n            <div class=\"row\">\n                <div class=\"col-md-12\">\n                    <div class=\"card card-profile card-plain\">\n                        <div class=\"card-avatar\">\n                            <img src=\"{{admin.avatar}}\" alt=\"{{admin.nombre}}\">\n                        </div>\n                        <div class=\"card-block\">\n                            <div class=\"author\">\n                                <h4 class=\"card-title\">{{admin.nombre}}</h4>\n                                <h6 class=\"card-category\">{{admin.cargo}}</h6>\n                            </div>\n                            <p class=\"card-description text-center\">{{admin.descripcion}}</p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n\n        <div class=\"section landing-section\">\n            <div class=\"container\">\n                <div class=\"row\">\n                    <div class=\"col-md-8 mr-auto ml-auto\">\n                        <h2 class=\"text-center\">Comunicarse por Whatsapp</h2>\n                        <form class=\"contact-form\">\n                            <div class=\"row\">\n                                <div class=\"col-md-12 mr-auto ml-auto\" rows=\"4\">\n                                    <label>Nombre</label>\n                                    <div class=\"input-group\" [ngClass]=\"{'input-group-focus':focus===true}\">\n                                        <div class=\"input-group-prepend\">\n                                        <span class=\"input-group-text\"><i class=\"nc-icon nc-single-02\"></i></span>\n                                        </div>\n                                        <input [(ngModel)]=\"comunicar.nombre\" #ctrl=\"ngModel\" name=\"nombre\" type=\"text\" class=\"form-control\" placeholder=\"Nombre\" (focus)=\"focus=true\" (blur)=\"focus=false\" >\n                                    </div>\n                                </div>\n                            </div>\n                            <label>Mensaje</label>\n                            <textarea [(ngModel)]=\"comunicar.mensaje\" #ctrl=\"ngModel\" name=\"mensaje\" class=\"form-control\" rows=\"4\" placeholder=\"Cuéntanos tus pensamientos y sentimientos...\"></textarea>\n                            <div class=\"row\">\n                                <div class=\"col-md-12 mr-auto ml-auto\">\n                                    <button class=\"btn btn-success btn-lg btn-fill\" style=\"width: 100%;\" (click)=\"comunicarse()\">Enviar mensaje</button>\n                                </div>\n                            </div>\n                        </form>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>";
+    __webpack_exports__["default"] = "<div *ngIf=\"admin && productos\" id=\"top\">\n    <div class=\"page-header\" data-parallax=\"true\" style=\"background-image: url('https://instagram.fscl14-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c20.0.905.905a/s640x640/93988852_223215262273942_7318410478601245939_n.jpg?_nc_ht=instagram.fscl14-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=pN5RSxoOgdcAX-S9T9N&oh=27449f739174ab688dee0ea1379442ac&oe=5F9E0D36'); min-height:50vh\">\n        <div class=\"filter\"></div>\n        <div class=\"container\">\n            <div class=\"motto text-center\">\n            </div>\n        </div>\n    </div>\n    <div class=\"main\">\n        <div class=\"section text-center\">\n        <div class=\"container\">\n            <div class=\"row\" id=\"descripcion\">\n                <div class=\"col-md-8 mr-auto ml-auto\">\n                    <h2 class=\"title\">{{admin.titulo}}</h2>\n                    <h5 class=\"description\">{{admin.presentacion}}</h5>\n                </div>\n            </div>\n            \n            <br/><br/>\n            \n            <div class=\"row\" id=\"productos\">\n                <div class=\"col-xs-12  col-sm-6 col-md-4\" *ngFor=\"let pro of productos; index as i;\" (click)=\"open(pro)\" style=\"margin-top: 5px;\">\n                    <div style=\"background-color: #6bd098;padding: 0px;border-radius: 10px;\">\n                        <img src=\"{{pro.img}}\" class=\"img-thumbnail img-responsive\" alt=\"Rounded Image\">\n                        <h6 style=\"color: #FFFFFF;padding-bottom: 5px;\">Ver Detalle</h6>\n                    </div>\n                </div>\n            </div>\n            \n            <br/><br/>\n\n            <div class=\"row\">\n                <div class=\"col-md-4\">\n                    <div class=\"info\">\n                        <div class=\"icon icon-primary\">\n                            <i class=\"nc-icon nc-cart-simple\"></i>\n                        </div>\n                        <div class=\"description\">\n                            <p class=\"info-title\">Despacho Gratuito</p>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-md-4\">\n                    <div class=\"info\">\n                        <div class=\"icon icon-primary\">\n                            <i class=\"nc-icon nc-favourite-28\"></i>\n                        </div>\n                        <div class=\"description\">\n                            <p class=\"info-title\">Agua 100% purificada</p>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-md-4\">\n                    <div class=\"info\">\n                        <div class=\"icon icon-primary\">\n                            <i class=\"nc-icon nc-world-2\"></i>\n                        </div>\n                        <div class=\"description\">\n                            <p class=\"info-title\">Producto aprobado con resolución sanitaria</p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n\n        </div>\n    </div>\n\n    <div class=\"section section-dark text-center\" id=\"nosotros\">\n        <div class=\"container\">\n            <h2 class=\"title\">Hablemos de nosotros</h2>\n            <div class=\"row\">\n                <div class=\"col-md-12\">\n                    <div class=\"card card-profile card-plain\">\n                        <div class=\"card-avatar\">\n                            <img src=\"{{admin.avatar}}\" alt=\"{{admin.nombre}}\">\n                        </div>\n                        <div class=\"card-block\">\n                            <div class=\"author\">\n                                <h4 class=\"card-title\">{{admin.nombre}}</h4>\n                                <h6 class=\"card-category\">{{admin.cargo}}</h6>\n                            </div>\n                            <p class=\"card-description text-center\">{{admin.descripcion}}</p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"section landing-section\" id=\"contacto\">\n        <div class=\"container\">\n            <div class=\"row\">\n                <div class=\"col-md-8 mr-auto ml-auto\">\n                    <h2 class=\"text-center\">Comunicarse por Whatsapp</h2>\n                    <form class=\"contact-form\">\n                        <div class=\"row\">\n                            <div class=\"col-md-12 mr-auto ml-auto\" rows=\"4\">\n                                <label>Nombre</label>\n                                <div class=\"input-group\" [ngClass]=\"{'input-group-focus':focus===true}\">\n                                    <div class=\"input-group-prepend\">\n                                    <span class=\"input-group-text\"><i class=\"nc-icon nc-single-02\"></i></span>\n                                    </div>\n                                    <input [(ngModel)]=\"comunicar.nombre\" #ctrl=\"ngModel\" name=\"nombre\" type=\"text\" class=\"form-control\" placeholder=\"Nombre\" (focus)=\"focus=true\" (blur)=\"focus=false\" >\n                                </div>\n                            </div>\n                        </div>\n                        <label>Mensaje</label>\n                        <textarea [(ngModel)]=\"comunicar.mensaje\" #ctrl=\"ngModel\" name=\"mensaje\" class=\"form-control\" rows=\"4\" placeholder=\"Cuéntanos tus pensamientos y sentimientos...\"></textarea>\n                        <div class=\"row\">\n                            <div class=\"col-md-12 mr-auto ml-auto\">\n                                <button class=\"btn btn-success btn-lg btn-fill\" style=\"width: 100%;\" (click)=\"comunicarse()\">Enviar mensaje</button>\n                            </div>\n                        </div>\n                    </form>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n<app-whatsapp></app-whatsapp>";
     /***/
   },
 
@@ -141,7 +141,27 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<nav class=\"navbar navbar-expand-lg fixed-top navbar-transparent\" color-on-scroll=\"500\">\n    <div class=\"container\">\n        <div class=\"navbar-translate\">\n            <a class=\"navbar-brand\" href=\"https://www.creative-tim.com\">Paper Kit 2 Angular</a>\n            <button class=\"navbar-toggler navbar-burger\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarToggler\" aria-controls=\"navbarTogglerDemo02\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" (click)=\"sidebarToggle()\">\n                <span class=\"navbar-toggler-bar\"></span>\n                <span class=\"navbar-toggler-bar\"></span>\n                <span class=\"navbar-toggler-bar\"></span>\n            </button>\n        </div>\n        <div class=\"navbar-collapse\" id=\"navbarToggler\">\n            <ul class=\"navbar-nav ml-auto\">\n                <li class=\"nav-item\" *ngIf=\"!isDocumentation()\">\n                    <a class=\"nav-link\" rel=\"tooltip\" title=\"Follow us on Twitter\" data-placement=\"bottom\" href=\"https://twitter.com/CreativeTim\" target=\"_blank\">\n                        <i class=\"fa fa-twitter\"></i>\n                        <p class=\"d-lg-none\">Twitter</p>\n                    </a>\n                </li>\n                <li class=\"nav-item\" *ngIf=\"!isDocumentation()\">\n                    <a class=\"nav-link\" rel=\"tooltip\" title=\"Like us on Facebook\" data-placement=\"bottom\" href=\"https://www.facebook.com/CreativeTim\" target=\"_blank\">\n                        <i class=\"fa fa-facebook-square\"></i>\n                        <p class=\"d-lg-none\">Facebook</p>\n                    </a>\n                </li>\n                <li class=\"nav-item\" *ngIf=\"!isDocumentation()\">\n                    <a class=\"nav-link\" rel=\"tooltip\" title=\"Follow us on Instagram\" data-placement=\"bottom\" href=\"https://www.instagram.com/CreativeTimOfficial\" target=\"_blank\">\n                        <i class=\"fa fa-instagram\"></i>\n                        <p class=\"d-lg-none\">Instagram</p>\n                    </a>\n                </li>\n                <li class=\"nav-item\" *ngIf=\"!isDocumentation()\">\n                    <a class=\"nav-link\" rel=\"tooltip\" title=\"Star on GitHub\" data-placement=\"bottom\" href=\"https://www.github.com/CreativeTimOfficial/paper-kit-2-angular\" target=\"_blank\">\n                        <i class=\"fa fa-github\"></i>\n                        <p class=\"d-lg-none\">GitHub</p>\n                    </a>\n                </li>\n                <li class=\"nav-item\" *ngIf=\"!isDocumentation()\">\n                    <a href=\"http://pk2-angular.creative-tim.com/documentation/tutorial\" class=\"nav-link\" target=\"_blank\"><i class=\"nc-icon nc-book-bookmark\"></i> Documentation</a>\n                </li>\n                <li class=\"nav-item\" *ngIf=\"isHome()\">\n                    <a href=\"https://www.creative-tim.com/product/paper-kit-2-pro-angular?ref=pk2-angular-free-local\" target=\"_blank\" class=\"btn btn-danger btn-round\">Upgrade to Pro</a>\n                </li>\n                <li class=\"nav-item\" *ngIf=\"!isHome()\">\n                    <a [routerLink]=\"['/home']\" *ngIf=\"!isDocumentation()\" class=\"nav-link\"><i class=\"nc-icon nc-layout-11\"></i>Components</a>\n                    <a [routerLink]=\"['/home']\" *ngIf=\"isDocumentation()\" class=\"nav-link\">Back to Kit</a>\n                </li>\n                <li class=\"nav-item\" *ngIf=\"isDocumentation()\">\n                    <a href=\"https://github.com/creativetimofficial/paper-kit-2-angular/issues?ref=pk2-free-local\" target=\"_blank\" class=\"nav-link\">Have an issue</a>\n                </li>\n            </ul>\n        </div>\n    </div>\n</nav>\n";
+    __webpack_exports__["default"] = "<nav class=\"navbar navbar-expand-lg fixed-top navbar-transparent\" color-on-scroll=\"500\">\n    <div class=\"container\">\n        <div class=\"navbar-translate\">\n            <a class=\"navbar-brand\"  [routerLink]='\".\"' fragment=\"top\">Aguas Victor B</a>\n            <button class=\"navbar-toggler navbar-burger\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarToggler\" aria-controls=\"navbarTogglerDemo02\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" (click)=\"sidebarToggle()\">\n                <span class=\"navbar-toggler-bar\"></span>\n                <span class=\"navbar-toggler-bar\"></span>\n                <span class=\"navbar-toggler-bar\"></span>\n            </button>\n        </div>\n        <div class=\"navbar-collapse\" id=\"navbarToggler\">\n            <ul class=\"navbar-nav ml-auto\">\n                <li class=\"nav-item\" *ngIf=\"!isDocumentation()\">\n                    <a class=\"nav-link\" rel=\"tooltip\" data-placement=\"bottom\" [routerLink]='\".\"' fragment=\"descripcion\">\n                        <i>Descripción</i>\n                    </a>\n                </li>\n                <li class=\"nav-item\" *ngIf=\"!isDocumentation()\">\n                    <a class=\"nav-link\" rel=\"tooltip\" data-placement=\"bottom\" [routerLink]='\".\"' fragment=\"productos\">\n                        <i>Productos</i>\n                    </a>\n                </li>\n                <li class=\"nav-item\" *ngIf=\"!isDocumentation()\">\n                    <a class=\"nav-link\" rel=\"tooltip\" data-placement=\"bottom\" [routerLink]='\".\"' fragment=\"nosotros\">\n                        <i>Nosotros</i>\n                    </a>\n                </li>\n                <li class=\"nav-item\" *ngIf=\"!isDocumentation()\">\n                    <a class=\"nav-link\" rel=\"tooltip\" data-placement=\"bottom\" [routerLink]='\".\"' fragment=\"contacto\" >\n                        <i>Contacto</i>\n                    </a>\n                </li>\n            </ul>\n        </div>\n    </div>\n</nav>\n";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/shared/whatsapp/whatsapp.component.html":
+  /*!***********************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/shared/whatsapp/whatsapp.component.html ***!
+    \***********************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppSharedWhatsappWhatsappComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<a href=\"https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche\" class=\"whatsapp\"\n  target=\"_blank\"> <i class=\"fa fa-whatsapp whatsapp-icon\"></i></a>";
     /***/
   },
 
@@ -289,43 +309,41 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function ngOnInit() {
           var _this = this;
 
-          if (this.removeNavbar()) {
-            var navbar = this.element.nativeElement.children[0].children[0];
-            this._router = this.router.events.filter(function (event) {
-              return event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_1__["NavigationEnd"];
-            }).subscribe(function (event) {
-              if (window.outerWidth > 991) {
-                window.document.children[0].scrollTop = 0;
-              } else {
-                window.document.activeElement.scrollTop = 0;
-              }
-
-              _this.navbar.sidebarClose();
-            });
-            this.renderer.listen('window', 'scroll', function (event) {
-              var number = window.scrollY;
-
-              if (number > 150 || window.pageYOffset > 150) {
-                // add logic
-                navbar.classList.remove('navbar-transparent');
-              } else {
-                // remove logic
-                navbar.classList.add('navbar-transparent');
-              }
-            });
-            var ua = window.navigator.userAgent;
-            var trident = ua.indexOf('Trident/');
-
-            if (trident > 0) {
-              // IE 11 => return version number
-              var rv = ua.indexOf('rv:');
-              var version = parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+          var navbar = this.element.nativeElement.children[0].children[0];
+          this._router = this.router.events.filter(function (event) {
+            return event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_1__["NavigationEnd"];
+          }).subscribe(function (event) {
+            if (window.outerWidth > 991) {
+              window.document.children[0].scrollTop = 0;
+            } else {
+              window.document.activeElement.scrollTop = 0;
             }
 
-            if (version) {
-              var body = document.getElementsByTagName('body')[0];
-              body.classList.add('ie-background');
+            _this.navbar.sidebarClose();
+          });
+          this.renderer.listen('window', 'scroll', function (event) {
+            var number = window.scrollY;
+
+            if (number > 150 || window.pageYOffset > 150) {
+              // add logic
+              navbar.classList.remove('navbar-transparent');
+            } else {
+              // remove logic
+              navbar.classList.add('navbar-transparent');
             }
+          });
+          var ua = window.navigator.userAgent;
+          var trident = ua.indexOf('Trident/');
+
+          if (trident > 0) {
+            // IE 11 => return version number
+            var rv = ua.indexOf('rv:');
+            var version = parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+          }
+
+          if (version) {
+            var body = document.getElementsByTagName('body')[0];
+            body.classList.add('ie-background');
           }
         }
       }, {
@@ -333,7 +351,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function removeNavbar() {
           var titlee = this.location.prepareExternalUrl(this.location.path());
           titlee = titlee.slice(1);
-          return titlee === 'langing';
+          return titlee === '/landing';
         }
       }, {
         key: "removeFooter",
@@ -635,7 +653,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     AppRoutingModule = __decorate([Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
       imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forRoot(routes, {
-        useHash: true
+        scrollPositionRestoration: 'enabled',
+        anchorScrolling: 'enabled',
+        scrollOffset: [0, 25]
       })],
       exports: []
     })], AppRoutingModule);
@@ -1225,6 +1245,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _signup_signup_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! ./signup/signup.component */
     "./src/app/public/signup/signup.component.ts");
+    /* harmony import */
+
+
+    var _shared_whatsapp_whatsapp_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! ../shared/whatsapp/whatsapp.component */
+    "./src/app/shared/whatsapp/whatsapp.component.ts");
 
     var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
       var c = arguments.length,
@@ -1247,7 +1273,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     };
 
     PublicModule = __decorate([Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
-      imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__["NgbModule"]],
+      imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__["NgbModule"], _shared_whatsapp_whatsapp_component__WEBPACK_IMPORTED_MODULE_7__["WhatsappComponent"]],
       declarations: [_landing_landing_component__WEBPACK_IMPORTED_MODULE_4__["LandingComponent"], _signup_signup_component__WEBPACK_IMPORTED_MODULE_6__["SignupComponent"], _profile_profile_component__WEBPACK_IMPORTED_MODULE_5__["ProfileComponent"]]
     })], PublicModule);
     /***/
@@ -1723,6 +1749,99 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       /*! ./navbar.component.scss */
       "./src/app/shared/navbar/navbar.component.scss"))["default"]]
     }), __metadata("design:paramtypes", [_angular_common__WEBPACK_IMPORTED_MODULE_1__["Location"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]])], NavbarComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/shared/whatsapp/whatsapp.component.scss":
+  /*!*********************************************************!*\
+    !*** ./src/app/shared/whatsapp/whatsapp.component.scss ***!
+    \*********************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppSharedWhatsappWhatsappComponentScss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = ".whatsapp {\n  position: fixed;\n  width: 60px;\n  height: 60px;\n  bottom: 40px;\n  right: 40px;\n  background-color: #25d366;\n  color: #FFF;\n  border-radius: 50px;\n  text-align: center;\n  font-size: 30px;\n  z-index: 100;\n}\n\n.whatsapp-icon {\n  margin-top: 25%;\n  margin-right: 10%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL21pbnQvREVTQVJST0xMTy9NSU8vcHJvZHVjdG9zL3NyYy9hcHAvc2hhcmVkL3doYXRzYXBwL3doYXRzYXBwLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9zaGFyZWQvd2hhdHNhcHAvd2hhdHNhcHAuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxlQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7RUFDQSxZQUFBO0VBQ0EsV0FBQTtFQUNBLHlCQUFBO0VBQ0EsV0FBQTtFQUNBLG1CQUFBO0VBQ0Esa0JBQUE7RUFDQSxlQUFBO0VBQ0EsWUFBQTtBQ0NGOztBREVBO0VBQ0UsZUFBQTtFQUNBLGlCQUFBO0FDQ0YiLCJmaWxlIjoic3JjL2FwcC9zaGFyZWQvd2hhdHNhcHAvd2hhdHNhcHAuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIud2hhdHNhcHAge1xuICBwb3NpdGlvbjpmaXhlZDtcbiAgd2lkdGg6NjBweDtcbiAgaGVpZ2h0OjYwcHg7XG4gIGJvdHRvbTo0MHB4O1xuICByaWdodDo0MHB4O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiMyNWQzNjY7XG4gIGNvbG9yOiNGRkY7XG4gIGJvcmRlci1yYWRpdXM6NTBweDtcbiAgdGV4dC1hbGlnbjpjZW50ZXI7XG4gIGZvbnQtc2l6ZTozMHB4O1xuICB6LWluZGV4OjEwMDtcbn1cblxuLndoYXRzYXBwLWljb24ge1xuICBtYXJnaW4tdG9wOiAyNSU7XG4gIG1hcmdpbi1yaWdodDogMTAlO1xufSIsIi53aGF0c2FwcCB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgd2lkdGg6IDYwcHg7XG4gIGhlaWdodDogNjBweDtcbiAgYm90dG9tOiA0MHB4O1xuICByaWdodDogNDBweDtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzI1ZDM2NjtcbiAgY29sb3I6ICNGRkY7XG4gIGJvcmRlci1yYWRpdXM6IDUwcHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgZm9udC1zaXplOiAzMHB4O1xuICB6LWluZGV4OiAxMDA7XG59XG5cbi53aGF0c2FwcC1pY29uIHtcbiAgbWFyZ2luLXRvcDogMjUlO1xuICBtYXJnaW4tcmlnaHQ6IDEwJTtcbn0iXX0= */";
+    /***/
+  },
+
+  /***/
+  "./src/app/shared/whatsapp/whatsapp.component.ts":
+  /*!*******************************************************!*\
+    !*** ./src/app/shared/whatsapp/whatsapp.component.ts ***!
+    \*******************************************************/
+
+  /*! exports provided: WhatsappComponent */
+
+  /***/
+  function srcAppSharedWhatsappWhatsappComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "WhatsappComponent", function () {
+      return WhatsappComponent;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+
+    var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+      var c = arguments.length,
+          r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+          d;
+      if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
+        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+      }
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+
+    var __metadata = undefined && undefined.__metadata || function (k, v) {
+      if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+    };
+
+    var __importDefault = undefined && undefined.__importDefault || function (mod) {
+      return mod && mod.__esModule ? mod : {
+        "default": mod
+      };
+    };
+
+    var WhatsappComponent =
+    /*#__PURE__*/
+    function () {
+      function WhatsappComponent() {
+        _classCallCheck(this, WhatsappComponent);
+      }
+
+      _createClass(WhatsappComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return WhatsappComponent;
+    }();
+
+    WhatsappComponent = __decorate([Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+      selector: 'app-whatsapp',
+      template: __importDefault(__webpack_require__(
+      /*! raw-loader!./whatsapp.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/shared/whatsapp/whatsapp.component.html"))["default"],
+      styles: [__importDefault(__webpack_require__(
+      /*! ./whatsapp.component.scss */
+      "./src/app/shared/whatsapp/whatsapp.component.scss"))["default"]]
+    }), __metadata("design:paramtypes", [])], WhatsappComponent);
     /***/
   },
 
